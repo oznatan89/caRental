@@ -1,0 +1,29 @@
+<!--
+                <div class="classMessage">
+                    <div class="namePhoneMsg">
+                        <div class="namePhone">
+                            <h1 class="className">from</h1>
+                        </div>
+                        <div class="pDate">
+                            <p>
+                                <font size="3">about the festival about the festival about the festival</font>
+                            </p>
+                            <h4>15/06/1989</h4>
+                        </div>
+                    </div>
+                    <div class="closeMail">
+                        <input id="Button1" type="button" value="x" onclick="delMsg('3')"/>                   
+                        <div class="classMail" title='Send an eMail'><a href="mailto:zipi@gmail.com">main@gmail.com</a></div>
+                        <h3 class="classPhone">050-7360963</h3>
+                    </div>
+                </div>
+-->
+
+<!--
+                <div id='divId' class='ClassJob' runat='server'>
+                    <h1 id='TextBox_TitleJob'>aaaaa</h1>
+                    <input id='del_button' type='button' value='X' runat='server' />
+                    <p id='TextBox_Detailsjob'>bbbbbb</p>
+                    <label id="num_carrer_id_label">num id: ccccccccc</label>
+                </div>
+-->
