@@ -1,0 +1,76 @@
+CREATE TABLE [dbo].[Career] (
+    [Title]   NCHAR (15)  NOT NULL,
+    [Details] NCHAR (100) NOT NULL,
+    [Number]  INT         NOT NULL, 
+    [Active]  NCHAR (5)   NOT NULL,
+);
+
+CREATE TABLE [dbo].[Cars]
+(
+    [license_plate] NCHAR (10) NOT NULL PRIMARY KEY,
+    [Type]          NCHAR (10) NOT NULL,
+    [Year]          NCHAR (10) NOT NULL,
+    [Color]         NCHAR (10) NOT NULL,
+    [Kilometer]     NCHAR (10) NOT NULL,
+    [Status]        NCHAR (10) NOT NULL,
+    [Kategory]      NCHAR (10) NOT NULL,
+)
+CREATE TABLE [dbo].[Clients]
+(
+    [Id]          INT        NOT NULL PRIMARY KEY,
+    [First_Name]  NCHAR (10) NOT NULL,
+    [Last_Name]   NCHAR (10) NOT NULL,
+    [Age]         DATE       NOT NULL,
+    [Address]     NCHAR (10) NOT NULL,
+    [Mail]        NCHAR (10) NOT NULL,
+    [Phone]       NCHAR (10) NOT NULL,
+    [Invitations] INT        NOT NULL,
+    [User]        NCHAR (10) NOT NULL,
+    [Password]    NCHAR (10) NOT NULL,
+)
+
+CREATE TABLE [dbo].[Credit_card]
+(
+    [ID]                  INT        NOT NULL ,
+    [Credit_card_ number] NCHAR (10) NOT NULL PRIMARY KEY,
+    [validity]            DATE       NOT NULL,
+    [CVV]                 NCHAR (10) NOT NULL,
+)
+
+CREATE TABLE [dbo].[Employees]
+(
+    [Id]         CHAR (10)  NOT NULL PRIMARY KEY,
+    [First_Name] NCHAR (10) NOT NULL,
+    [Last_Name]  NCHAR (10) NOT NULL,
+    [Age]        DATE       NOT NULL,
+    [Address]    NCHAR (10) NOT NULL,
+    [Permission] NCHAR (10) NOT NULL,
+)
+
+CREATE TABLE [dbo].[Events]
+(
+    [Num_Event]     INT        NOT NULL ,
+    [Date]          DATE       NOT NULL,
+    [license_plate] NCHAR (10) NOT NULL,
+    [Type_Event]    NCHAR (10) NOT NULL,
+    [producer]      NCHAR (10) NOT NULL,
+    [Price]         MONEY      NULL,
+)
+
+CREATE TABLE [dbo].[Msg]
+(
+    [From]    NCHAR (20)  NULL,
+    [To]      NCHAR (10)  NULL,
+    [Massege] NCHAR (200) NULL,
+    [Image]   NCHAR (10)  NULL,
+    [date]    NCHAR (20)  NULL
+)
+
+CREATE TABLE [dbo].[Rentals]
+(
+    [Num_Invitations] INT        NOT NULL PRIMARY KEY,
+    [Id]              NCHAR (10) NOT NULL,
+    [license_plate]   NCHAR (10) NOT NULL,
+    [Start_Rental]    DATE       NOT NULL,
+    [End_Rental]      DATE       NOT NULL,
+)
